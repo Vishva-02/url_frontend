@@ -92,7 +92,7 @@ Ensures faster response time for users
 
 ## 🎬 Video Demo
 
-Watch the full demo of **Shortify Pro** here: [Loom Video](https://www.loom.com/share/e6264d93f2f74b118a5b9332aa9b4ef4)
+Watch the full demo of **Shortify Pro** here: [Loom Video](https://www.loom.com/share/66fff8cff72044849aabd20de5dd839e)
 
 This video demonstrates:
 - Signup/Login
