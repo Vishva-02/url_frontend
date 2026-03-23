@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-// Pointing exclusively to your NEW Live Render Backend!
-const API_URL = import.meta.env.VITE_API_URL || 'https://url-0bp8.onrender.com';
+// Automatically point to Localhost during development, and Render during production!
+const API_URL = import.meta.env.MODE === 'development' 
+    ? 'http://127.0.0.1:5000' 
+    : 'https://url-0bp8.onrender.com';
 
 const api = axios.create({
     baseURL: API_URL,
