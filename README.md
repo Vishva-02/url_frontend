@@ -62,3 +62,20 @@ This project is a full-stack URL Shortener where users can create short links an
 2. Install dependencies:
    ```bash
    npm install
+
+🌐 Live Project
+
+👉 Frontend: https://url-frontend-eta-two.vercel.app  
+👉 Backend: https://url-0bp8.onrender.com
+
+🤖 AI Planning & Development Notes
+
+This project was built using structured AI-assisted development:
+
+Designed REST APIs for authentication and URL management
+Implemented JWT-based protected routes
+Used MongoDB schema for users and URLs
+Built modular frontend components (Login, Register, Dashboard)
+Integrated backend APIs using Axios
+Designed responsive UI using Tailwind CSS
+Iteratively improved UX and UI using AI prompts
