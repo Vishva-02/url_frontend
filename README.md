@@ -2,7 +2,7 @@
 
 This project is a full-stack URL Shortener where users can create short links and track analytics.  
 
-**Live Demo:** [Frontend Link](https://url-frontend-eta-two.vercel.app/)  
+**Live Demo:** [Frontend Link](https://url-frontend-g7cb0w33c-vishva-vaisnavis-projects.vercel.app?_vercel_share=LRfJ0778lS5eKEZ0F2fmPVUHKY7zW5Xs)  
 **Backend Link:** (add your backend deployed link here)
 
 ---
@@ -65,7 +65,7 @@ This project is a full-stack URL Shortener where users can create short links an
 
 🌐 Live Project
 
-👉 Frontend: https://url-frontend-eta-two.vercel.app  
+👉 Frontend: https://url-frontend-g7cb0w33c-vishva-vaisnavis-projects.vercel.app?_vercel_share=LRfJ0778lS5eKEZ0F2fmPVUHKY7zW5Xs
 👉 Backend: https://url-0bp8.onrender.com
 
 🤖 AI Planning & Development Notes
