@@ -6,6 +6,7 @@ import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Analytics from './pages/Analytics';
 
 function PublicRoute({ children }) {
     const { token, loading } = useContext(AuthContext);
@@ -30,6 +31,14 @@ function AppRoutes() {
                 element={
                     <PrivateRoute>
                         <Dashboard />
+                    </PrivateRoute>
+                }
+            />
+            <Route
+                path="/analytics/:id"
+                element={
+                    <PrivateRoute>
+                        <Analytics />
                     </PrivateRoute>
                 }
             />

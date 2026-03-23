@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
+import { Link } from 'react-router-dom';
 import api from '../services/api';
 
 function Dashboard() {
@@ -101,8 +102,8 @@ function Dashboard() {
                                 </div>
                                 {/* Core User Identity block */}
                                 <div className="hidden md:flex flex-col justify-center">
-                                    <span className="text-sm font-bold text-white leading-tight capitalize">{user?.name || 'Pro User'}</span>
-                                    <span className="text-[11px] font-medium text-indigo-300 truncate max-w-[140px] leading-tight mt-0.5">{user?.email || 'user@workspace.com'}</span>
+                                    <span className="text-sm font-bold text-white leading-tight capitalize">{user?.name || user?.email?.split('@')[0] || 'User'}</span>
+                                    <span className="text-[11px] font-medium text-indigo-300 truncate max-w-[140px] leading-tight mt-0.5">{user?.email || ''}</span>
                                 </div>
                             </div>
 
@@ -245,6 +246,14 @@ function Dashboard() {
                                                 </div>
 
                                                 <div className="flex items-center gap-2 w-full sm:w-auto lg:w-full lg:justify-end">
+                                                    <Link
+                                                        to={`/analytics/${url._id}`}
+                                                        className="flex-1 sm:flex-none justify-center bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/20 px-3 py-2 rounded-lg font-bold flex items-center gap-1.5 transition-all hover:scale-105"
+                                                        title="View Analytics"
+                                                    >
+                                                        <span className="text-base">📊</span> Analytics
+                                                    </Link>
+
                                                     <button
                                                         onClick={() => copyToClipboard(url.shortCode)}
                                                         className="flex-1 sm:flex-none justify-center bg-indigo-500 hover:bg-indigo-600 text-white shadow-lg shadow-indigo-500/20 px-3 py-2 rounded-lg font-bold flex items-center gap-1.5 transition-all hover:scale-105"

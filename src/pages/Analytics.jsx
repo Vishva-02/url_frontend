@@ -13,16 +13,12 @@ const Analytics = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!user) {
-            navigate('/login');
-        } else {
-            fetchAnalytics();
-        }
-    }, [id, user]);
+        fetchAnalytics();
+    }, [id]);
 
     const fetchAnalytics = async () => {
         try {
-            const res = await api.get(`/urls/${id}/analytics`);
+            const res = await api.get(`/api/url/${id}/analytics`);
             setAnalytics(res.data.data);
         } catch (err) {
             console.error('Failed to fetch analytics');
